@@ -1,3 +1,11 @@
+# macOS
+.DS_Store
+
+# Script outputs (run locally; do not commit)
+outputs/
+*.csv
+*.bu
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -14,7 +22,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
