@@ -27,6 +27,14 @@ if __name__ == "__main__":
 - Scripts run directly: `python3 scripts/<area>/<script>.py`
 - No shared runners, no orchestration wrappers, no frameworks.
 
+## Virtual Environments
+
+- Scripts that need third-party packages get a `.venv` scoped to their subdirectory — not a repo-wide environment.
+- Create it inside the script's directory: `cd scripts/<area> && python3 -m venv .venv`
+- Activate before running: `source scripts/<area>/.venv/bin/activate`
+- `.venv` directories are gitignored; never suggest committing them.
+- When suggesting a new third-party dependency, name the `pip install` command and note which script directory owns the `.venv`.
+
 ## Repository Structure
 
 ```
